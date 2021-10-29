@@ -4,10 +4,10 @@
     Creare una funzione per capire se la parola inserita è palindroma 
 */
 let word = '';
-do{
-    word = prompt('inserisci una parola');
 
-} while(!isNaN(word));
+while(!isNaN(word)){
+    word = prompt('inserisci una parola');
+}
 console.log('Parola:', word);
 
 const palindromeWord = reverseWord(word);
