@@ -17,7 +17,7 @@ while(choiseUser !== 'pari' && choiseUser !== 'dispari'){
 // scelta pari o dispari pc
 if(choiseUser =='pari'){
     choisePc = 'dispari';
-} else if(choiseUser =='dispari'){
+} else {
     choisePc = 'pari';
 }
 // stampa scelta
@@ -35,13 +35,15 @@ console.log("Numero inserito dall'utente:", userNumber);
 let numRandComputer = randomPc(1, 5);
 console.log('Numero randomico PC:', numRandComputer);
 
+// somma dei due numeri
 let somma = userNumber + numRandComputer;
 console.log('La somma dei due numeri è:', somma);
 
-
+// controllo pari o dispari
 let oddOrEven = EvenOrOdd(somma);
-console.log(oddOrEven);
+console.log('La somma dei due numeri è un numero:', oddOrEven);
 
+// scelta vincitore
 if(choiseUser === oddOrEven){
   console.log('HAI VINTO!');
 } else{
