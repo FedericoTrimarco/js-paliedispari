@@ -12,6 +12,7 @@ console.log('Parola:', word);
 
 const palindromeWord = reverseWord(word);
 
+console.log(palindromeWord);
 
 /**************
   FUNZIONI
@@ -26,9 +27,8 @@ function reverseWord(palind){
     console.log('parola invertita:', reverse);
 
     if(palind === reverse){
-        console.log("La parola E' palindroma")
-    } else{
-        console.log("La parola NON E' palindroma")
+    return "La parola E' palindroma"
     }
+    return "La parola NON E' palindroma"
     
 }
