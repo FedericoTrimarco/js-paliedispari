@@ -63,11 +63,10 @@ function randomPc(min, max){
 
 function EvenOrOdd(num1){
     
-    let result = '';
     if(num1 % 2 === 0){
-        result = 'pari';
-    } else if(num1 % 2 !== 0){
-        result = 'dispari';
-    }
-    return result;
+        return 'pari';
+    } 
+        
+    return 'dispari';
+    
 }
